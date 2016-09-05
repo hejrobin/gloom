@@ -1,6 +1,9 @@
 # Changelog
 
-## 0.3.1
+## 0.3.3
+* Fixed broken stylesheet.
+
+## 0.3.2
 * Added brackets highlight.
 
 ## 0.2.3
