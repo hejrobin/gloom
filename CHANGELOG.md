@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3
+* Note: Don't push pre-coffee...
+
+## 0.2.2
+* Fixed typo.
+
 ## 0.2.1
 * Fixed syntax variables.
 * Added screenshot.
