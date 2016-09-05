@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+* Fixed syntax variables.
+* Added screenshot.
+
 ## 0.2.0
 * Version bump.
 

@@ -1,4 +1,8 @@
+@charset "UTF-8";
+
 @import "syntax-variables";
+
+// Generics
 
 atom-text-editor,
 :host {
@@ -66,89 +70,84 @@ atom-text-editor.is-focused .line.cursor-line,
   background-color: #3E3F59;
 }
 
+// Syntax Coloring
+
 .comment {
-  color: #57578B;
+  color: @syntax-type-comment;
 }
 
 .string {
-  color: #6DFEDF;
+  color: @syntax-type-string;
 }
 
 .constant.numeric {
-  color: #FFDB7D;
+  color: @syntax-type-numeric;
 }
 
-.constant.language {
-  color: #AE81FF;
-}
-
-.constant.character, .constant.other {
-  color: #AE81FF;
+.constant.language,
+.constant.character,
+.constant.other {
+  color: @syntax-type-lang;
 }
 
 .variable {
-  color: #FF6F9F;
+  color: @syntax-type-variable;
 }
 
 .keyword {
-  color: #7AA5FF;
+  color: @syntax-type-keyword;
 }
 
 .storage {
-  color: #ED4781;
+  color: @syntax-type-storage;
 }
 
 .storage.type {
-  color: #ED4781;
+  color: @syntax-type-storage-type;
 }
 
 .entity.name.class {
-  color: #678BDC;
+  color: @syntax-type-structure;
 }
 
 .entity.other.inherited-class {
-  color: #678BDC;
+  color: @syntax-type-inheritance;
 }
 
 .entity.name.function {
-  color: #2DE0A7;
+  color: @syntax-type-definition;
 }
 
 .variable.parameter {
-  color: #FFBC69;
+  color: @syntax-type-parameter;
 }
 
 .entity.name.tag {
-  color: #FF6F9F;
+  color: @syntax-type-tag;
 }
 
 .entity.other.attribute-name {
-  color: #F92672;
+  color: @syntax-type-attribute;
 }
 
-.support.function {
-  color: #66D9EF;
-}
-
+.support.function,
 .support.constant {
-  color: #66D9EF;
+  color: @syntax-type-function;
 }
 
-.support.type, .support.class {
-  color: #66D9EF;
+.support.type,
+.support.class {
+  color: @syntax-type-function;
 }
 
-.support.other.variable {
-}
-
-.invalid {
-  text-decoration: underline;
-  color: #F8F8F0;
-  background-color: #F92672;
+.invalid,
+.invalid.deprecated {
+  font-style: italic;
+  color: @syntax-type-invalid;
+  border-bottom: 1px dotted @syntax-type-invalid;
 }
 
 .invalid.deprecated {
-  text-decoration: underline;
-  color: #F8F8F0;
-  background-color: #AE81FF;
+  color: @syntax-type-deprecated;
+  border-bottom-color: @syntax-type-deprecated;
 }
