@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.1
+* Added brackets highlight.
+
 ## 0.2.3
 * Note: Don't push pre-coffee...
 

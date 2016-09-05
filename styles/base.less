@@ -67,7 +67,14 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection,
 atom-text-editor.is-focused .line.cursor-line,
 :host(.is-focused) .line-number.cursor-line-no-selection,
 :host(.is-focused) .line.cursor-line {
-  background-color: #3E3F59;
+  background-color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor::shadow .bracket-matcher .region {
+  z-index: 100;
+  border-radius: 2px;
+  background-color: : 1px solid fade(@syntax-bracket-matcher, 10%);
+  border: 1px solid fade(@syntax-bracket-matcher, 60%);
 }
 
 // Syntax Coloring
