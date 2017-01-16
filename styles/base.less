@@ -4,73 +4,60 @@
 
 // Generics
 
-atom-text-editor,
-:host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter,
-:host .gutter {
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line,
-:host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection,
-:host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .wrap-guide,
-:host .wrap-guide {
+atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide,
-:host .indent-guide {
+atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character,
-:host .invisible-character {
+atom-text-editor .invisible-character{
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
+atom-text-editor .search-results .marker .region{
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region{
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor,
-:host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor{
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region,
-:host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region{
   background-color: @syntax-selection-color;
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
-atom-text-editor.is-focused .line.cursor-line,
-:host(.is-focused) .line-number.cursor-line-no-selection,
-:host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line.cursor-line{
   background-color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor::shadow .bracket-matcher .region {
+atom-text-editor.editor .bracket-matcher .region {
   z-index: 100;
   border-radius: 2px;
   background-color: fade(@syntax-bracket-matcher, 30%);
@@ -79,82 +66,82 @@ atom-text-editor::shadow .bracket-matcher .region {
 
 // Syntax Coloring
 
-.comment {
+.syntax--comment {
   color: @syntax-type-comment;
 }
 
-.string {
+.syntax--string {
   color: @syntax-type-string;
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: @syntax-type-numeric;
 }
 
-.constant.language,
-.constant.character,
-.constant.other {
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
   color: @syntax-type-lang;
 }
 
-.variable {
+.syntax--variable {
   color: @syntax-type-variable;
 }
 
-.keyword {
+.syntax--keyword {
   color: @syntax-type-keyword;
 }
 
-.storage {
+.syntax--storage {
   color: @syntax-type-storage;
 }
 
-.storage.type {
+.syntax--storage.syntax--type {
   color: @syntax-type-storage-type;
 }
 
-.entity.name.class {
+.syntax--entity.syntax--name.syntax--class {
   color: @syntax-type-structure;
 }
 
-.entity.other.inherited-class {
+.syntax--entity.syntax--other.syntax--inherited-class {
   color: @syntax-type-inheritance;
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: @syntax-type-definition;
 }
 
-.variable.parameter {
+.syntax--variable.syntax--parameter {
   color: @syntax-type-parameter;
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
   color: @syntax-type-tag;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: @syntax-type-attribute;
 }
 
-.support.function,
-.support.constant {
+.syntax--support.syntax--function,
+.syntax--support.syntax--constant {
   color: @syntax-type-function;
 }
 
-.support.type,
-.support.class {
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
   color: @syntax-type-function;
 }
 
-.invalid,
-.invalid.deprecated {
+.syntax--invalid,
+.syntax--invalid.syntax--deprecated {
   font-style: italic;
   color: @syntax-type-invalid;
   border-bottom: 1px dotted @syntax-type-invalid;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
   color: @syntax-type-deprecated;
   border-bottom-color: @syntax-type-deprecated;
 }
