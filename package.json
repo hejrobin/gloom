@@ -5,7 +5,8 @@
   "description": "A dark and gloomy pastel color syntax theme for Atom.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+		"gloom",
   ],
   "repository": "https://github.com/lessthanthree/gloom",
   "license": "MIT",
