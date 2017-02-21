@@ -8,7 +8,7 @@
     "theme",
     "gloom"
   ],
-  "repository": "https://github.com/lessthanthree/gloom",
+  "repository": "https://github.com/hejrobin/gloom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.13.0 <2.0.0"
