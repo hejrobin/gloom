@@ -12,5 +12,8 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.13.0 <2.0.0"
-  }
+  },
+	"private": true,
+	"number": 1,
+	error
 }
