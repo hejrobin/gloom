@@ -1,0 +1,25 @@
+.syntax--markup.syntax--gfm {
+  &.syntax--heading {
+    color: @syntax-type-definition;
+  }
+  
+  &.syntax--underline.syntax--link {
+    color: @syntax-type-string;
+  }
+}
+
+.syntax--gfm .syntax--link {
+  &:hover {
+    background: fade(@syntax-type-structure, 20%);
+    border-radius: 2px;
+  }
+  
+  .syntax--entity {
+    color: @syntax-type-lang;
+  }
+  
+  .syntax--punctuation.syntax--begin,
+  .syntax--punctuation.syntax--end {
+    color: @syntax-type-comment;
+  }
+}
