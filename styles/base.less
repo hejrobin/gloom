@@ -31,29 +31,29 @@ atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character{
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .syntax--marker .region{
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .syntax--marker.current-result .region{
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor{
+atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region{
+atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
-atom-text-editor.is-focused .line.cursor-line{
+atom-text-editor.is-focused .line.cursor-line {
   background-color: @syntax-wrap-guide-color;
 }
 
@@ -148,3 +148,4 @@ atom-text-editor.editor .bracket-matcher .region {
 
 @import "syntax/json";
 @import "syntax/markdown";
+@import "syntax/git";
