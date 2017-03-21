@@ -1,12 +1,12 @@
-.tree-view:focus li.directory.selected.status-added > .list-item {
+.tree-view:focus li.syntax-.syntax--directory.selected.status-added > .list-item {
   &::after { background-color: @syntax-vcs-added-bg; }
-  &::before, .name { color: @syntax-vcs-added-fg; }
+  &::before, .syntax--name { color: @syntax-vcs-added-fg; }
 }
 
 .tree-view:focus li:not(.list-nested-item).selected.status-added,
 .tree-view:focus li.list-nested-item > .list-item.selected.status-added {
   &::before { background-color: @syntax-vcs-added-bg; }
-  .name { color: @syntax-vcs-added-fg; }
+  .syntax--name { color: @syntax-vcs-added-fg; }
 }
 
 .list-tree li:not(.list-nested-item):not(.tabBlender).status-added,
@@ -18,15 +18,15 @@
   color: @syntax-vcs-added-fg;
 }
 
-.tree-view:focus li.directory.selected.status-modified > .list-item {
+.tree-view:focus li.syntax--directory.selected.status-modified > .list-item {
   &::after { background-color: @syntax-vcs-modified-bg; }
-  &::before, .name { color: @syntax-vcs-modified-fg; }
+  &::before, .syntax--name { color: @syntax-vcs-modified-fg; }
 }
 
 .tree-view:focus li:not(.list-nested-item).selected.status-modified,
 .tree-view:focus li.list-nested-item > .list-item.selected.status-modified {
   &::before { background-color: @syntax-vcs-modified-bg; }
-  .name { color: @syntax-vcs-modified-fg; }
+  .syntax--name { color: @syntax-vcs-modified-fg; }
 }
 
 .list-tree li:not(.list-nested-item):not(.tabBlender).status-modified,
