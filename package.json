@@ -1,7 +1,7 @@
 {
   "name": "gloom",
   "theme": "syntax",
-  "version": "0.4.13",
+  "version": "0.5.0",
   "description": "A dark and gloomy pastel color syntax theme for Atom.",
   "keywords": [
     "syntax",
