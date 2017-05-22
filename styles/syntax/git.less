@@ -9,6 +9,20 @@
   .syntax--name { color: @syntax-vcs-added-fg; }
 }
 
+.list-group li:not(.list-nested-item).selected.status-added,
+.list-tree li:not(.list-nested-item).selected.status-added,
+:focus .list-group li:not(.list-nested-item).selected.status-added,
+:focus .list-tree li:not(.list-nested-item).selected.status-added,
+.list-group li.list-nested-item.selected.status-added > .list-item,
+.list-tree li.list-nested-item.selected.status-added > .list-item,
+:focus .list-group li.list-nested-item.selected.status-added > .list-item,
+:focus .list-tree li.list-nested-item.selected.status-added > .list-item,
+.directory.list-nested-item.selected.status-added,
+.directory.list-nested-item.selected.status-added {
+  &::before { background-color: @syntax-vcs-added-bg; }
+  &, .syntax--name, .icon-file-name { color: @syntax-vcs-added-fg; }
+}
+
 .list-tree li:not(.list-nested-item):not(.tabBlender).status-added,
 .list-group li:not(.list-nested-item):not(.tabBlender).status-added,
 .list-tree li.list-nested-item > .list-item.status-added,
@@ -23,10 +37,18 @@
   &::before, .syntax--name { color: @syntax-vcs-modified-fg; }
 }
 
-.tree-view:focus li:not(.list-nested-item).selected.status-modified,
-.tree-view:focus li.list-nested-item > .list-item.selected.status-modified {
+.list-group li:not(.list-nested-item).selected.status-modified,
+.list-tree li:not(.list-nested-item).selected.status-modified,
+:focus .list-group li:not(.list-nested-item).selected.status-modified,
+:focus .list-tree li:not(.list-nested-item).selected.status-modified,
+.list-group li.list-nested-item.selected.status-modified > .list-item,
+.list-tree li.list-nested-item.selected.status-modified > .list-item,
+:focus .list-group li.list-nested-item.selected.status-modified > .list-item,
+:focus .list-tree li.list-nested-item.selected.status-modified > .list-item,
+.directory.list-nested-item.selected.status-modified,
+.directory.list-nested-item.selected.status-modified {
   &::before { background-color: @syntax-vcs-modified-bg; }
-  .syntax--name { color: @syntax-vcs-modified-fg; }
+  &, .syntax--name, .icon-file-name { color: @syntax-vcs-modified-fg; }
 }
 
 .list-tree li:not(.list-nested-item):not(.tabBlender).status-modified,
