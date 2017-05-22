@@ -1,0 +1,21 @@
+.status-bar {
+	&-right {
+
+		.deprecation-cop-status {
+			&.text-warning {
+				color: @syntax-color-removed;
+			}
+		}
+		
+		.git-status {
+			.status-added {
+				color: @syntax-vcs-added-fg;
+			}
+			
+			.status-modified {
+				color: @syntax-vcs-modified-fg;
+			}
+		}
+
+	}
+}
