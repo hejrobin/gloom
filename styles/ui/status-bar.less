@@ -7,13 +7,30 @@
 			}
 		}
 		
-		.git-status {
-			.status-added {
-				color: @syntax-vcs-added-fg;
+		.git-view {
+			.git-status {
+				.status-added {
+					color: @syntax-vcs-added-fg;
+				}
+				
+				.status-modified {
+					color: @syntax-vcs-modified-fg;
+				}
 			}
 			
-			.status-modified {
-				color: @syntax-vcs-modified-fg;
+			.git-branch {
+				color: @syntax-type-lang;
+			}
+		}
+		
+		.package-updates-status-view {
+			color: @syntax-result-marker-color;
+			text-shadow: fade(@syntax-result-marker-color, 50%) 0 0 3px;
+			transition: all 250ms ease-in-out;
+			
+			&:hover {
+				color: @syntax-bracket-matcher;
+				text-shadow: fade(@syntax-bracket-matcher, 50%) 0 0 3px;
 			}
 		}
 
