@@ -10,14 +10,14 @@
         &::before {
           background-color: @syntax-vcs-added-bg;
         }
-        & > .syntax--name {
+        & > span {
           color: @syntax-vcs-added-fg;
         }
       }
     }
     
     &.status-modified {
-      & > .syntax--name {
+      & > span {
         color: @syntax-vcs-modified-fg;
       }
       
@@ -25,7 +25,7 @@
         &::before {
           background-color: @syntax-vcs-modified-bg;
         }
-        & > .syntax--name {
+        & > span {
           color: @syntax-vcs-modified-fg;
         }
       }
@@ -36,7 +36,7 @@
   .list-nested-item {
     &.status-added {
       & > .list-item {
-        .syntax--name, &::before {
+        & > span {
           color: @syntax-vcs-added-fg;
         }
       }
@@ -50,7 +50,7 @@
       }
       
       &.selected > .list-item {
-        .syntax--name {
+        & > span {
           color: @syntax-vcs-added-fg;
         }
       }
@@ -58,7 +58,7 @@
 
     &.status-modified {
       & > .list-item {
-        .syntax--name, &::before {
+        & > span {
           color: @syntax-vcs-modified-fg;
         }
       }
@@ -72,7 +72,7 @@
       }
       
       &.selected > .list-item {
-        .syntax--name {
+        & > span {
           color: @syntax-vcs-modified-fg;
         }
       }
